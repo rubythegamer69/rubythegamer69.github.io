@@ -2,6 +2,13 @@ body{
     margin: 0;
     padding: 0;
 }
-.about{
-    background-color: #f4f4f4;
+.jumbotron {
+  background-image: url("img2.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+#information {
+	background-color: #0275d8;
 }
