@@ -23,6 +23,7 @@
     body {
       margin: 0;
       padding: 0;
+      background: #f4f4f4;
     }
 
     .btn {
@@ -78,22 +79,27 @@
 
     .about__title {
       font-family: sans-serif;
-      font-size: 300%;
+      font-size: 200%;
       position: relative;
+
     }
 
     .img {
       border-radius: 8px;
+      margin: 20px 0 40px 0;
       width: auto;
-      box-shadow: 5px 10px #3f9a15;
+      
     }
 
     .info {
-      font-size: 170%;
+      font-size: 120%;
     }
 
     .main__stories {
       background-color: #f4f4f4;
+    }
+    .card__item:hover{
+      transition: transform .5s ease;
     }
   </style>
 
@@ -117,7 +123,7 @@
             <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="#">donate</a>
+            <a class="nav-link btn btn-dark btn-lg" href="#">donate</a>
           </li>
         </ul>
       </div>
@@ -128,23 +134,28 @@
   <!--header-->
   <header class="header">
     <div class="wrapper py-5 ">
-      <div id="carouselExampleControls " class="carousel slide " data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/img/LRP0800-1400x500.jpg" alt="First slide">
+            <img class="d-block w-100" src="assets/img/nature-people-girl-forest-12165.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="assets/img/nature-people-girl-forest-12165.jpg" alt="Second slide">
+            <img class="d-block w-100" src="assets/img/nature-people-girl-forest-12165.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="assets/img/LRP0800-1400x500.jpg" alt="Third slide">
+            <img class="d-block w-100" src="assets/img/nature-people-girl-forest-12165.jpg" alt="First slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -152,7 +163,7 @@
     </div>
     <!-- /.carousel -->
   </header>
-  <div class="py-3"></div>
+
 
   <!--header end-->
 
@@ -166,19 +177,20 @@
         <p class="text-muted">Strong Roots, Unlimited growth</p>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-md-7 box item-1 ">
-        <h1 class="about__title"><strong>Who are We?</strong> </h1>
-        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Officia at et alias cupiditate optio, voluptate nesciunt
-          tempora commodi laborum est iure provident ex fugiat blanditiis
-          animi sequi itaque sit odit?</p>
+    <div class="row text-left">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-lg-6 col-xl-6">
+          <p class="info mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum
+            at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque
+            eveniet unde. Laudantium veniam exercitationem expedita laborum
+            at voluptate.</p>
+          <a class="btn btn-primary btn-lg mt-3 mb-3" href="#">View Project</a>
+          <a class="btn btn-primary btn-lg mt-3 mb-3 mr-4" href="#">Volunteer</a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-6">
+            <img class="img img-fluid rounded mb-3 mb-md-0 w-100" src="img/img1.png" alt="">
+        </div>
 
-        <a class="btn btn-success btn-lg learn__more" href="#" role="button">Learn More</a>
-        <a class="btn btn-success btn-lg learn__more px-2" href="#" role="button">Volunteer</a>
-      </div>
-      <div class="col-md-5  item-2">
-        <img src="assets/img/nature-people-girl-forest-12165.jpg" class=" img img-fluid" alt="">
       </div>
     </div>
 
@@ -201,8 +213,22 @@
     <div class="container">
       <div class="row h-75 py-3 px-3">
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card " style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+            <div class="card card__item " >
+              <a href="stories.html" class="custom-card">
+                <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card " >
+            <a href="" class="custom-card">
+              <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+            </a>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
@@ -211,8 +237,10 @@
         </div>
 
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card " style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+          <div class="card " >
+            <a href="" class="custom-card">
+              <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+            </a>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
@@ -221,8 +249,10 @@
         </div>
 
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card " style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+          <div class="card " >
+            <a href="" class="custom-card">
+              <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+            </a>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
@@ -231,8 +261,10 @@
         </div>
 
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card " style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+          <div class="card " >
+            <a href="" class="custom-card">
+              <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+            </a>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
@@ -241,18 +273,10 @@
         </div>
 
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card " style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card " style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+          <div class="card ">
+            <a href="stories.html" class="custom-card">
+              <img class="card-img-top" src="assets/img/img2.jpeg" alt="Card image cap">
+            </a>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
@@ -267,7 +291,6 @@
   </section>
   <!-- Stories end -->
 
-  <!-- Footer -->
   <!-- Footer -->
   <footer class="page-footer font-small h-75 blue-grey lighten-5 ">
 
