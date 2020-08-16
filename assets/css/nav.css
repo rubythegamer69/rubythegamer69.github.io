@@ -1,0 +1,13 @@
+.wrapping-class.a {
+	color: #fff;
+	display: inline-block;
+	background-color: #666;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.wrapping-class a:hover {
+	background-color: #000;
+}
+.wrapping-class .active{
+	background-color: red;
+}
